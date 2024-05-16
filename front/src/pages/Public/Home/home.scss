@@ -1,0 +1,20 @@
+@import "../../../styles/variables.scss";
+
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+iframe {
+    border: 2rem solid $purple;
+    border-radius: 2rem;
+    margin: 5rem auto;
+}
+
+.h2Yt {
+    background-color: $purple;
+    text-align: center;
+    width: 100%;
+
+}

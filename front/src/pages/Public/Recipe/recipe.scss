@@ -1,0 +1,94 @@
+@import "../../../styles/variables";
+.recipesTitle {
+    text-align: center;
+    background-color: $purple;
+    color: #333;
+    margin-bottom: 5rem;
+}
+
+.completed-step label {
+    text-decoration: line-through $purple;
+    text-decoration-thickness: 0.4rem;
+}
+
+.recipesArticle {
+    padding: 1rem;
+}
+
+input[type="checkbox"] {
+
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    width: 2rem;
+    height: 2rem;
+    border: .2rem solid #ccc;
+    border-radius: .3rem;
+    outline: none;
+    cursor: pointer;
+    position: relative;
+    vertical-align: middle;
+
+    &::before {
+        content: "";
+        display: block;
+        width: 1rem;
+        height: 1rem;
+        background-color: transparent;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    &:checked::before {
+        background-color: $purple;
+    }
+}
+
+.recipesH3 {
+    text-align: center;
+    background-color: $secondPurple;
+    margin: 5rem 0;
+    color: #333;
+}
+
+
+.recipePicture {
+    display: block;
+    margin: 5rem auto;
+    width: 20rem;
+    height: auto;
+}
+
+@media screen and (min-width:700px) {
+    .recipePicture {
+
+        width: 40rem;
+
+    }
+
+}
+
+.comment {
+    margin: 2rem auto;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    border: 0.2rem solid $purple;
+    border-radius: 1rem;
+    .pseudo {
+        background-color: $purple;
+        text-align: center;
+    }
+    .commentContent {
+        word-wrap: break-word;
+        margin: 1rem;
+    }
+    .commentDate {
+        padding: 1rem;
+        background-color: $secondPurple;
+        border-radius: 1rem;
+        text-align: center;
+    }
+}

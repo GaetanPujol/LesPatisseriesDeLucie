@@ -1,0 +1,40 @@
+@import "../../styles/variables.scss";
+
+footer {
+    text-align: center;
+    padding: 3rem 3rem 0 3rem;
+    margin-top: 5rem;
+    background-color: $purple;
+    .social,
+    .coordinated {
+        padding: 3rem 0 3rem 0;
+        margin: 3rem auto 3rem auto;
+        border: .2rem solid $secondPurple;
+        border-radius: 3rem;
+    }
+    .icone {
+        width: 5rem;
+        height: 5rem;
+        color: black;
+        margin: 2rem;
+    }
+
+}
+
+@media screen and (min-width:950px) {
+    footer {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        .social,
+        .coordinated {
+            width: 35%;
+            margin: 5rem;
+        }
+        .copyright {
+            width: 100%;
+            text-align: end;
+        }
+    }
+
+}

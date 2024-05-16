@@ -1,0 +1,39 @@
+@use "../../styles/mixins" as mxn;
+@import "../../styles/variables.scss";
+
+
+.input {
+  @include mxn.input-reseter;
+
+  &__container {
+    &:focus-within {
+      transform: translateY(2px);
+      box-shadow: 0 0 0 2px $shadow-color;
+    }
+
+    flex-shrink: 0;
+    flex-basis: 0%;
+    flex-grow: 1;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    gap: 4px;
+    z-index: 1;
+    position: relative;
+    background: white;
+    transition-property: all;
+    transition-duration: 0.15s;
+    border-radius: $small-radius;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    box-shadow: 0 0 0 2px $shadow-color,
+    0px 4px 0 $shadow-color;
+  }
+
+  &__label {
+    top: -60%;
+    left: 8px;
+    font-style: italic;
+    position: absolute;
+    font-size: $font-size-tiny;
+  }
+}

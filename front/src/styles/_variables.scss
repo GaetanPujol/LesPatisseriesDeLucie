@@ -1,0 +1,52 @@
+ //Color 
+ $purple:#9475BC;
+ $secondPurple:#E0D5EC;
+ $red:#DC4525;
+ $gradient-bg: linear-gradient( 113deg,
+ rgba(138, 149, 248, 0.2) 0%,
+ rgba(191, 155, 249, 0.11) 100%);
+ $white: rgba(255, 255, 255, 0.8);
+ $shadow-color: rgba(0, 0, 0, 0.7);
+ $red-x-light: #fff0f6;
+ $red-light: #fcc2d7;
+ $green-x-light: #e6fcf5;
+ $green-light: #96f2d7;
+ $green: #38d9a9;
+
+ /* Radius */
+
+ $small-radius: .5rem;
+ $basic-radius: 1rem;
+
+ /*Padding*/
+
+ $padding-xs: 0.8rem;
+ $padding-s: 1.6rem;
+ $padding-m: 2.4rem;
+ $padding-l: 3.2rem;
+ $padding-xl: 4.8rem;
+ $padding-xxl: 6.4rem;
+
+ /* Container */
+
+ $container-width: 96.4rem;
+ $container-padding: var(--padding-l);
+
+ /* Font*/
+
+ $font-size-tiny: calc(0.8rem + 0.6vmin);
+ $font-size-small: calc(1rem + 0.6vmin);
+ $font-size-medium: calc(1.2rem + 0.6vmin);
+ $font-size-large: calc(1.4rem + 0.6vmin);
+ $font-size-big: calc(1.8rem + 0.6vmin);
+ $font-size-huge: calc(2.4rem + 0.6vmin);
+ $font-weight-thin: 100;
+ $font-weight-extra-light: 200;
+ $font-weight-light: 300;
+ $font-weight-regular: 400;
+ $font-weight-medium: 500;
+ $font-weight-semi-bold: 600;
+ $font-weight-bold: 700;
+ $font-weight-extra-bold: 800;
+ $font-weight-black: 900;
+ 

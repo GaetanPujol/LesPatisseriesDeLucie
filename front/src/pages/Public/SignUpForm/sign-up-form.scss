@@ -1,0 +1,39 @@
+@import "../../../styles/variables.scss";
+
+.sign-up-form {
+  border: 0.2rem solid $purple;
+  padding: 2rem;
+  border-radius: .5rem;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  margin: 2rem auto;
+  width: 90%;
+  text-align: center;
+  .btns {
+
+    &>* {
+
+      flex-shrink: 0;
+      flex-basis: 0%;
+      flex-grow: 1;
+
+    }
+
+    display: flex;
+    gap: 1.6rem;
+
+  }
+  p {
+    margin: 0;
+    color: $red;
+  }
+}
+
+@media screen and (min-width:1000px) {
+  .sign-up-form {
+    width: 45%;
+
+  }
+
+}

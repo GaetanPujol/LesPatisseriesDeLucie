@@ -1,0 +1,141 @@
+@import "../../../styles/variables.scss";
+.recipeList {
+    .recipeCard {
+        border: .2rem solid $purple;
+        border-radius: 1rem;
+        display: flex;
+        flex-direction: column;
+
+        width: 75%;
+        margin: 2rem auto;
+        padding: 2rem;
+    }
+    h2 {
+        text-align: center;
+        margin: 2rem;
+    }
+    .pRecipe {
+        text-align: center;
+        width: 100%;
+    }
+
+    button {
+        margin: 1rem;
+    }
+    .confirmDelete {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        p {
+            text-align: center;
+            width: 100%;
+        }
+
+    }
+
+}
+
+.recipeEdit,
+.recipeAdd {
+    border: 0.2rem solid $purple;
+    padding: 2rem;
+    border-radius: .5rem;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    margin: 2rem auto;
+    width: 90%;
+    text-align: center;
+    h2 {
+        text-align: center;
+        margin-bottom: 3rem;
+    }
+
+
+
+    textarea {
+        margin-bottom: 3rem;
+    }
+    textarea {
+        font-size: 2rem;
+        width: 100%;
+        height: 10rem;
+        padding: 1rem;
+        border: .1rem solid #ccc;
+        border-radius: .5rem;
+        box-shadow: 0 0 0 2px $shadow-color,
+        0px 4px 0 $shadow-color;
+        &:focus-within {
+            transform: translateY(2px);
+            box-shadow: 0 0 0 2px $shadow-color;
+        }
+
+    }
+    .form-group {
+        margin: 2rem 0 1rem 0;
+
+        .form-label {
+            font-weight: bold;
+            margin-bottom: 0.5rem;
+        }
+
+
+        .form-select {
+            padding: 1.5rem;
+            background-color: #fff;
+            border-radius: $small-radius;
+            border: .1rem solid #ccc;
+            width: 100%;
+            &:focus-within {
+                transform: translateY(2px);
+                box-shadow: 0 0 0 2px $shadow-color;
+            }
+            box-shadow: 0 0 0 2px $shadow-color,
+            0px 4px 0 $shadow-color;
+        }
+
+        .form-option {
+            padding: 0.5rem;
+        }
+    }
+
+    .btns {
+
+        &>* {
+
+            flex-shrink: 0;
+            flex-basis: 0%;
+            flex-grow: 1;
+
+        }
+
+        display: flex;
+        gap: 1.6rem;
+
+    }
+
+    p {
+        margin: 0;
+        color: $red;
+    }
+
+    .input__container {
+        margin-top: 5rem;
+        margin-bottom: 3rem;
+
+    }
+    .button {
+        margin-top: 5rem;
+        width: 100%;
+    }
+
+}
+
+@media screen and (min-width:1000px) {
+    .recipeEdit,
+    .recipeAdd {
+        width: 45%;
+
+    }
+
+}

@@ -1,0 +1,43 @@
+@import "../../styles/variables";
+
+
+
+
+.cardLink {
+    text-decoration: none;
+    color: #333;
+    width: 80%;
+
+    .recipeArticle {
+        border: solid $purple 0.3rem;
+        max-width: 40rem;
+        height: 40rem;
+        text-align: center;
+        overflow: hidden;
+        margin: 5rem auto;
+
+        .h3Article {
+            background-color: $purple;
+        }
+
+        img.cardsImg {
+            width: 100%;
+            height: 100%;
+            object-fit: fill;
+            display: block;
+        }
+
+    }
+
+}
+
+
+
+
+@media screen and (min-width:1000px) {
+    .cardLink {
+        width: 45%;
+
+    }
+
+}
